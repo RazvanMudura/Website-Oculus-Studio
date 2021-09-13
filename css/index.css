@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "Rosellinda";
+  src: url("/images/Rosellinda\ Alyamore.otf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#top-logo {
+  font-family: "Rosellinda", sans-serif;
+  font-weight: lighter;
+  font-size: 70px;
+  text-align: center;
+}
+
+#bottom-logo {
+  font-size: 14px;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  margin: 20px;
+  width: auto !important;
+  height: 500px !important;
+}
+
+/* ICONS */
+
+#social-media .icon {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+a:hover > .fa {
+  color: #ffffff;
+}
+
+#social-media .tooltip {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  font-size: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#social-media .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#social-media .icon:hover .tooltip {
+  top: -35px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#social-media .icon:hover,
+#social-media .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+#social-media .facebook:hover,
+#social-media .facebook:hover .tooltip,
+#social-media .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+#social-media .instagram:hover,
+#social-media .instagram:hover .tooltip,
+#social-media .instagram:hover .tooltip::before {
+  background: #f0cd33;
+  background: -moz-linear-gradient(45deg, #f0cd33 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f0cd33 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f0cd33 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0cd33 ', endColorstr='#bc1888',GradientType=1 );
+  color: #ffffff;
+}
+
+#social-media .whatsapp:hover,
+#social-media .whatsapp:hover .tooltip,
+#social-media .whatsapp:hover .tooltip::before {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+#social-media .email:hover,
+#social-media .email:hover .tooltip,
+#social-media .email:hover .tooltip::before {
+  background-color: #e21704;
+  color: #ffffff;
+}
+
+/* IDK */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 220%;
+  background: rgb(235, 53, 132);
+  top: -50%;
+  left: -100%;
+  z-index: 1;
+  transform: rotate(25deg);
+  transform-origin: center top 0;
+  transition: 0.5s;
+}
+
+card:hover::before {
+  left: 10%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  color: white;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: -100%;
+  color: #fff;
+  left: 0;
+  z-index: 2;
+  transition: 1.1s;
+}
+
+.card:hover .card-text {
+  top: 80px;
+}
