@@ -18,11 +18,11 @@
     <title>Contact | Oculus Studio Oradea</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light p-0">
       <div class="container-fluid">
-        <a href="./index.html" class="navbar-brand">
-          <div id="top-logo" class="flex justify-content-center">Oculus Studio</div>
-          <div id="bottom-logo" class="flex justify-content-center">· by Barna Bogdan ·</div>
+        <a href="./index.html" class="navbar-brand p-0 w-20">
+          <div id="top-logo">Oculus Studio</div>
+          <div id="bottom-logo">· by Barna Bogdan ·</div>
         </a>
         <button
           class="navbar-toggler"
@@ -35,8 +35,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav justify-content-center text-nowrap">
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="./albume.html" class="nav-link">Albume</a>
             </li>
@@ -44,41 +44,38 @@
               <a href="./galerie.html" class="nav-link">Galerie</a>
             </li>
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
+              <a href="./contact.html" class="nav-link active">Contact</a>
             </li>
           </ul>
         </div>
-      </div>
-      <div id="social-media">
-        <ul class="navbar-nav justify-content-center text-nowrap">
-          <li class="nav-item">
-            <a class="icon instagram nav-link" href="https://www.instagram.com/barna_bogdan28" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Instagram</div>
-              <div class="fa fa-instagram fa-md"></div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="icon facebook nav-link" href="https://www.facebook.com/bogdan.barna.1" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Facebook</div>
-              <div class="fa fa-facebook fa-md"></div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="icon whatsapp nav-link" href="https://api.whatsapp.com/send?phone=0753492242&amp" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Whatsapp</div>
-              <div class="fa fa-whatsapp fa-md"></div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="icon email nav-link" href="mailto:oculusstudiooradea@gmail.com" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Email</div>
-              <div class="fa fa-envelope-o fa-md"></div>
-            </a>
-          </li>
-        </ul>
+        <div id="social-media" class="w-20">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="icon instagram nav-link" href="https://www.instagram.com/barna_bogdan28" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Instagram</div>
+                <div class="fa fa-instagram fa-md"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="icon facebook nav-link" href="https://www.facebook.com/bogdan.barna.1" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Facebook</div>
+                <div class="fa fa-facebook fa-md"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="icon whatsapp nav-link" href="https://api.whatsapp.com/send?phone=0753492242&amp" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Whatsapp</div>
+                <div class="fa fa-whatsapp fa-md"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="icon email nav-link" href="mailto:oculusstudiooradea@gmail.com" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Email</div>
+                <div class="fa fa-envelope-o fa-md"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="row px-5">
@@ -101,7 +98,7 @@
             </div>
           </div>
           <div class="form-group"><label class="h6">Mesaj</label> <textarea name="message" id="msgus" cols="10" rows="5" class="form-control bg-light" placeholder="Mesaj"></textarea></div>
-          <div class="form-group d-flex justify-content-end"><input type="submit" class="btn btn-primary text-white" value="Trimite Mesaj" /></div>
+          <div class="form-group d-flex justify-content-end"><input type="submit" class="btn btn-dark text-white" value="Trimite Mesaj" /></div>
         </form>
       </div>
     </div>

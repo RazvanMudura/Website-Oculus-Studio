@@ -18,9 +18,9 @@
     <title>Oculus Studio Oradea</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light p-0">
       <div class="container-fluid">
-        <a href="./index.html" class="navbar-brand">
+        <a href="./index.html" class="navbar-brand p-0">
           <div id="top-logo">Oculus Studio</div>
           <div id="bottom-logo">· by Barna Bogdan ·</div>
         </a>
@@ -35,8 +35,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav justify-content-center text-wrap">
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="./albume.html" class="nav-link">Albume</a>
             </li>
@@ -48,49 +48,46 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div id="social-media">
-        <ul class="navbar-nav justify-content-center text-nowrap">
-          <li class="nav-item">
-            <a class="icon instagram nav-link" href="https://www.instagram.com/barna_bogdan28" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Instagram</div>
-              <div class="fa fa-instagram fa-md"></div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="icon facebook nav-link" href="https://www.facebook.com/bogdan.barna.1" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Facebook</div>
-              <div class="fa fa-facebook fa-md"></div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="icon whatsapp nav-link" href="https://api.whatsapp.com/send?phone=0753492242&amp" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Whatsapp</div>
-              <div class="fa fa-whatsapp fa-md"></div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="icon email nav-link" href="mailto:oculusstudiooradea@gmail.com" target="_blank" rel="noopener noreferrer">
-              <div class="tooltip">Email</div>
-              <div class="fa fa-envelope-o fa-md"></div>
-            </a>
-          </li>
-        </ul>
+        <div id="social-media">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="icon instagram nav-link" href="https://www.instagram.com/barna_bogdan28" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Instagram</div>
+                <div class="fa fa-instagram fa-md"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="icon facebook nav-link" href="https://www.facebook.com/bogdan.barna.1" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Facebook</div>
+                <div class="fa fa-facebook fa-md"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="icon whatsapp nav-link" href="https://api.whatsapp.com/send?phone=0753492242&amp" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Whatsapp</div>
+                <div class="fa fa-whatsapp fa-md"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="icon email nav-link" href="mailto:oculusstudiooradea@gmail.com" target="_blank" rel="noopener noreferrer">
+                <div class="tooltip">Email</div>
+                <div class="fa fa-envelope-o fa-md"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/images/galerie/BARNA (250).jpg" class="d-block w-100 rounded" />
+          <img src="/images/index/BARNA-41.jpg" id="index" />
         </div>
         <div class="carousel-item">
-          <img src="/images/galerie/BARNA (38).jpg" class="d-block w-100 rounded" />
+          <img src="/images/index/BARNA-55.jpg" id="index" />
         </div>
         <div class="carousel-item">
-          <img src="/images/galerie/BARNA (714).jpg" class="d-block w-100 rounded" />
+          <img src="/images/index/BARNA-57.jpg" id="index" />
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -102,7 +99,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <button type="button" class="btn mr-md-2 mb-md-0 mb-2 btn-outline-primary btn-round justify-content-center">Afla Oferta</button>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-outline-dark btn-round">Afla Oferta</button>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
