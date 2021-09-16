@@ -130,8 +130,23 @@ a:hover > .fa {
 
 #index {
   display: block;
-  height: 700px;
+  max-height: 700px;
   width: auto;
   margin: auto;
   z-index: 2;
+}
+
+.navbar-toggler {
+  border: transparent;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
