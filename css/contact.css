@@ -17,10 +17,6 @@ a:hover {
   color: #57b846;
 }
 
-p {
-  color: #666666;
-}
-
 ul,
 li {
   list-style-type: none;
@@ -93,30 +89,22 @@ textarea:-ms-input-placeholder {
   color: #999999;
 }
 
-button {
-  outline: none !important;
-  border: none;
-  background: transparent;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 iframe {
   border: none !important;
 }
 
-.bg-contact2 {
+.background-contact {
+  min-height: 100vh;
   width: 100%;
+  background-image: url(/images/index/8.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.container-contact2 {
+.overlay-background {
   width: 100%;
-  min-height: calc(100vh - 126px);
+  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -126,11 +114,14 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: url(/images/index/8.jpg) no-repeat;
-  background-size: 2000px auto;
+  background: rgb(58, 56, 56);
+  background: -webkit-linear-gradient(45deg, rgba(99, 98, 98, 0.7), rgba(32, 32, 32, 0.7));
+  background: -o-linear-gradient(45deg, rgba(99, 98, 98, 0.7), rgba(32, 32, 32, 0.7));
+  background: -moz-linear-gradient(45deg, rgba(99, 98, 98, 0.7), rgba(32, 32, 32, 0.7));
+  background: linear-gradient(45deg, rgba(99, 98, 98, 0.7), rgba(32, 32, 32, 0.7));
 }
 
-.wrap-contact2 {
+.wrap-contact {
   width: 790px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
@@ -138,13 +129,12 @@ iframe {
   padding: 72px 55px 90px 55px;
 }
 
-.contact2-form {
+.contact-form {
   width: 100%;
 }
 
-.contact2-form-title {
+.contact-form-title {
   display: block;
-  font-family: "Poppins", sans-serif;
   font-size: 39px;
   color: #333333;
   line-height: 1.2;
@@ -152,14 +142,14 @@ iframe {
   padding-bottom: 90px;
 }
 
-.wrap-input2 {
+.wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 2px solid #000000;
   margin-bottom: 37px;
 }
 
-.input2 {
+.input-text {
   display: block;
   width: 100%;
   background: transparent;
@@ -168,7 +158,7 @@ iframe {
   line-height: 1.2;
 }
 
-.focus-input2 {
+.focus-input {
   position: absolute;
   display: block;
   width: 100%;
@@ -178,7 +168,7 @@ iframe {
   pointer-events: none;
 }
 
-.focus-input2::before {
+.focus-input::before {
   content: "";
   display: block;
   position: absolute;
@@ -195,7 +185,7 @@ iframe {
   background: rgb(173, 173, 173);
 }
 
-.focus-input2::after {
+.focus-input::after {
   content: attr(data-placeholder);
   display: block;
   width: 100%;
@@ -213,44 +203,44 @@ iframe {
   transition: all 0.4s;
 }
 
-input.input2 {
+input.input-text {
   height: 45px;
 }
 
-input.input2 + .focus-input2::after {
+input.input-text + .focus-input::after {
   top: 16px;
   left: 0;
 }
 
-textarea.input2 {
+textarea.input-text {
   min-height: 115px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
 
-textarea.input2 + .focus-input2::after {
+textarea.input-text + .focus-input::after {
   top: 16px;
   left: 0;
 }
 
-.input2:focus + .focus-input2::after {
+.input-text:focus + .focus-input::after {
   top: -13px;
 }
 
-.input2:focus + .focus-input2::before {
+.input-text:focus + .focus-input::before {
   width: 100%;
 }
 
-.has-val.input2 + .focus-input2::after {
+.has-val.input-text + .focus-input::after {
   top: -13px;
 }
 
-.has-val.input2 + .focus-input2::before {
+.has-val.input-text + .focus-input::before {
   width: 100%;
 }
 
 @media (max-width: 576px) {
-  .wrap-contact2 {
+  .wrap-contact {
     padding: 72px 15px 90px 15px;
   }
 }
@@ -280,7 +270,6 @@ textarea.input2 + .focus-input2::after {
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   visibility: hidden;
   opacity: 0;
 
@@ -292,7 +281,6 @@ textarea.input2 + .focus-input2::after {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: FontAwesome;
   display: block;
   position: absolute;
   color: #c80000;

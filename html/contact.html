@@ -14,30 +14,30 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/scrollbar.css" />
+    <link rel="stylesheet" href="/css/icons.css" />
     <link rel="stylesheet" href="/css/contact.css" />
-    <script src="/js/index.js" defer></script>
     <title>Contact | Oculus Studio Oradea</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
       <div class="container-fluid">
         <a href="./index.html" id="logo" class="navbar-brand p-0 w-20">
           <div id="top-logo">Oculus Studio</div>
           <div id="bottom-logo">· by Barna Bogdan ·</div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="#navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="#navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse w-100" id="navbarLinks">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="./oferte.html" class="nav-link">Oferte</a>
+              <a href="./oferte.html" class="nav-link mid-link" id="underline">Oferte</a>
             </li>
             <li class="nav-item">
-              <a href="./galerie.html" class="nav-link">Galerie</a>
+              <a href="./galerie.html" class="nav-link mid-link" id="underline">Galerie</a>
             </li>
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link active">Contact</a>
+              <a href="./contact.html" class="nav-link active mid-link">Contact</a>
             </li>
           </ul>
 
@@ -70,25 +70,25 @@
         </div>
       </div>
     </nav>
-    <div class="bg-contact2" style="background-color: black">
-      <div class="container-contact2">
-        <div class="wrap-contact2">
-          <form class="contact2-form validate-form">
-            <span class="contact2-form-title"> Contact </span>
+    <div class="background-contact">
+      <div class="overlay-background">
+        <div class="wrap-contact">
+          <form class="contact-form validate-form">
+            <span class="contact-form-title"> Contact </span>
 
-            <div class="wrap-input2 validate-input" data-validate="Name is required">
-              <input class="input2" type="text" name="name" />
-              <span class="focus-input2" data-placeholder="Nume"></span>
+            <div class="wrap-input validate-input" data-validate="Introduceti un nume">
+              <input class="input-text" type="text" name="name" />
+              <span class="focus-input" data-placeholder="Nume"></span>
             </div>
 
-            <div class="wrap-input2 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-              <input class="input2" type="text" name="email" />
-              <span class="focus-input2" data-placeholder="Email"></span>
+            <div class="wrap-input validate-input" data-validate="Introduceti un email valid">
+              <input class="input-text" type="text" name="email" />
+              <span class="focus-input" data-placeholder="Email"></span>
             </div>
 
-            <div class="wrap-input2 validate-input" data-validate="Message is required">
-              <textarea class="input2" name="message"></textarea>
-              <span class="focus-input2" data-placeholder="Mesaj"></span>
+            <div class="wrap-input validate-input" data-validate="Introduceti un mesaj">
+              <textarea class="input-text" name="message"></textarea>
+              <span class="focus-input" data-placeholder="Mesaj"></span>
             </div>
 
             <div class="d-flex justify-content-center">
@@ -108,5 +108,6 @@
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>
