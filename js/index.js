@@ -1,6 +1,6 @@
 const inner = document.getElementById("carouselInner");
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 4; i++) {
   const div = document.createElement("div");
   const img = document.createElement("img");
 
@@ -10,8 +10,8 @@ for (let i = 1; i <= 10; i++) {
     div.className = "carousel-item";
   }
 
-  img.src = `/images/index/${i}.jpg`;
-  img.id = "index";
+  img.src = `/images/main/${i}.jpg`;
+  img.id = "imgMain";
   img.className = "img-fluid";
 
   div.appendChild(img);

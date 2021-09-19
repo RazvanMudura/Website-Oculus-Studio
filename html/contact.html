@@ -74,16 +74,17 @@
     <div class="background-contact">
       <div class="overlay-background">
         <div class="wrap-contact">
-          <form class="contact-form validate-form">
+          <form class="contact-form validate-form" action="https://formsubmit.co/oculusstudiooradea@gmail.com" method="POST">
             <span class="contact-form-title"> Contact </span>
-
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://oculusstudiooradea.com" />
             <div class="wrap-input validate-input" data-validate="Introduceti un nume">
               <input class="input-text" type="text" name="name" />
               <span class="focus-input" data-placeholder="Nume"></span>
             </div>
 
             <div class="wrap-input validate-input" data-validate="Introduceti un email valid">
-              <input class="input-text" type="text" name="email" />
+              <input class="input-text" type="email" name="email" />
               <span class="focus-input" data-placeholder="Email"></span>
             </div>
 
@@ -93,7 +94,7 @@
             </div>
 
             <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-outline-dark btn-round border-3">Trimite Mesaj</button>
+              <button type="submit" class="btn btn-outline-dark btn-round border-3">Trimite Mesaj</button>
             </div>
           </form>
         </div>
