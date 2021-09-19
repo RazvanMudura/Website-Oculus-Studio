@@ -1,7 +1,7 @@
 (function ($) {
   "use strict";
 
-  $(".input").each(function () {
+  $(".input-text").each(function () {
     $(this).on("blur", function () {
       if ($(this).val().trim() != "") {
         $(this).addClass("has-val");

@@ -52,7 +52,7 @@ a {
   padding: 0px !important;
 }
 
-.active::after {
+a.active::after {
   user-select: none;
   pointer-events: none;
   content: "";
