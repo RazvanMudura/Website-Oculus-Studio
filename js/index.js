@@ -10,7 +10,7 @@ for (let i = 1; i <= 4; i++) {
     div.className = "carousel-item";
   }
 
-  img.src = `/images/main/${i}.jpg`;
+  img.src = `https://razvanmudura.github.io/Website-Oculus-Studio/images/main/${i}.jpg`;
   img.id = "imgMain";
   img.className = "img-fluid";
 
