@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @font-face {
   font-family: "Rosellinda";
-  src: url(https://razvanmudura.github.io/Website-Oculus-Studio/images/Rosellinda%20Alyamore.otf);
+  src: url(https://oculusstudiooradea.com/images/font.otf);
 }
 
 * {
@@ -33,6 +33,11 @@ body {
 
 .navbar-toggler {
   border: none;
+}
+
+.navbar {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 li {
@@ -107,6 +112,67 @@ a.active::after {
   margin: 7px;
 }
 
-#rowOferta {
-  margin-top: 100px;
+#oferte,
+td {
+  font-weight: lighter;
+  color: white;
+  font-size: 18px;
+}
+
+#oferte::first-line,
+th {
+  font-weight: bolder;
+  color: white;
+  font-size: 22px;
+}
+
+#oferte {
+  margin-bottom: 150px !important;
+}
+
+#background-oferta {
+  background-image: url(https://oculusstudiooradea.com/images/oferte-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#overlay-background-oferta {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border-top: 3px solid white;
+  background-color: white;
+  opacity: 1;
+  width: 40%;
+  margin: auto;
+  margin-top: 7px;
+}
+
+#hrContact {
+  border-top: 3px solid black;
+  background-color: black;
+  opacity: 1;
+  width: 100%;
+  margin: auto;
+  margin-top: 7px;
+}
+
+#btnOferta {
+  width: 20%;
+  text-align: center;
+}
+
+.col-md,
+.container-fluid {
+  padding: 0px !important;
+}
+
+.row {
+  margin: 0 !important;
 }
