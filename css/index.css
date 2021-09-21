@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@font-face {
-  font-family: "Rosellinda";
-  src: url(https://razvanmudura.github.io/Website-Oculus-Studio/images/font.otf);
-}
+@import url("http://fonts.cdnfonts.com/css/rosellinda-alyamore");
 
 * {
   box-sizing: border-box;
@@ -20,7 +17,7 @@ body {
 }
 
 #top-logo {
-  font-family: "Rosellinda", sans-serif;
+  font-family: "Rosellinda Alyamore", sans-serif;
   font-weight: lighter;
   font-size: 70px;
   text-align: center;
