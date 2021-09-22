@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Rosellinda Alyamore";
-  src: url("font.otf");
+  src: url("/font.otf");
 }
 
 * {
@@ -23,6 +23,7 @@ body {
 #top-logo {
   font-family: "Rosellinda Alyamore";
   font-size: 70px;
+  font-weight: bold;
   text-align: center;
 }
 
