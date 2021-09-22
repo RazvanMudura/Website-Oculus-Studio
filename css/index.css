@@ -1,22 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("http://fonts.cdnfonts.com/css/rosellinda-alyamore");
 
 @font-face {
-  font-family: "rosellinda_alyamore";
-  src: url("rosellinda_alyamore-webfont.eot");
-  src: url("rosellinda_alyamore-webfont.eot?#iefix") format("embedded-opentype"), url("rosellinda_alyamore-webfont.woff2") format("woff2"), url("rosellinda_alyamore-webfont.woff") format("woff"),
-    url("rosellinda_alyamore-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "rosellinda_alyamore";
-  src: url("rosellinda_alyamore-webfont.eot");
-  src: url("rosellinda_alyamore-webfont.eot?#iefix") format("embedded-opentype"), url("rosellinda_alyamore-webfont.woff2") format("woff2"), url("rosellinda_alyamore-webfont.woff") format("woff"),
-    url("rosellinda_alyamore-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Rosellinda Alyamore";
+  src: url("font.otf");
 }
 
 * {
@@ -35,8 +21,7 @@ body {
 }
 
 #top-logo {
-  font-family: "rosellinda_alyamore";
-  font-weight: lighter;
+  font-family: "Rosellinda Alyamore";
   font-size: 70px;
   text-align: center;
 }
